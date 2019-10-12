@@ -8,5 +8,5 @@ func (g greeting) Greet() {
 	fmt.Println("hello world")
 }
 
-//Greeter with custom greet to any name
+//Greeter plugin generate  use the flag -buildmode=plugin and -o path/filename.so -o path/plugin.go
 var Greeter greeting

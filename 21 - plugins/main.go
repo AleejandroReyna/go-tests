@@ -8,10 +8,11 @@ import (
 
 //Greeter interface
 type Greeter interface {
-	Greet(greet, name string)
+	Greet()
 }
 
 func main() {
+
 	plug, err := plugin.Open("./sayhi/sayhi.os")
 	if err != nil {
 		fmt.Println(err)
@@ -31,5 +32,5 @@ func main() {
 		os.Exit(1)
 	}
 
-	greeter.Greet("Hello", "Alejandro")
+	greeter.Greet()
 }

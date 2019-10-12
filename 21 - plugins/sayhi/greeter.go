@@ -4,8 +4,8 @@ import "fmt"
 
 type greeting string
 
-func (g greeting) Greet(greet string, name string) {
-	fmt.Printf("%s %s", greet, name)
+func (g greeting) Greet() {
+	fmt.Println("hello world")
 }
 
 //Greeter with custom greet to any name
